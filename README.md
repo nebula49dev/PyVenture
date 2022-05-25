@@ -2,6 +2,7 @@
 A text-based adventure game written entirely in Python.
 
 ## Notes
+- Requires any Python 3 interpreter to run.
 - Necessary info is inside of "wiki.rtf" file. This contains information
 on the story, and how to play.
 - This project is a low priority for me. Don't expect super frequent updates.
@@ -13,3 +14,6 @@ language. Download a Python 3 interpreter on any machine and this game will run.
 - First release! 🎉 🎉
 - Added main story, keeping the code and the launcher seperate for now.
 - I made sure to place lots of comments for easy edits and modding.
+
+#### Sword path by @nebula49dev
+#### Bow path by @logopro5
