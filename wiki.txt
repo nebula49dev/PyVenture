@@ -1,1 +1,17 @@
 Welcome to the Highlands, a vast open world with lots of monsters and enemies.
+To play this game, open and run "launcher.py" located in the Resources folder.
+
+At the beginning of the game, you get to choose your weapon. This will decide
+what path your story will take.
+
+The sword and bow paths were made by two completely different developers,
+which is why the story takes a completely different route depending on what
+you choose.
+
+============ Sword Path Wiki ============
+      -- Developed by @nebula49dev --
+
+
+
+============ Bow Path Wiki ============
+      -- Developed by @logopro5 --
