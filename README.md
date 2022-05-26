@@ -22,7 +22,6 @@ A text-based adventure game written entirely in Python.
 > ## Tools Used
 > - Base Engine - https://www.askpython.com/python/text-based-adventure-game
 > - Text Editor - Microsoft Visual Studio Code
-> - Python IDLE - Testing
 
 ### Sword path by @nebula49dev
 ### Bow path by @logopro5
