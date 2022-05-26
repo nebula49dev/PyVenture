@@ -2,6 +2,11 @@
 #         SWORD PATH         #
 ##############################
 
+# -1 = null
+# 1 = true
+# 0 = false
+didIgnore = -1
+
 import time
 
 
@@ -87,7 +92,9 @@ def sword3():
 def swordSkip():
     print("""
           You are stopped by a group of guards.
-          "You can't be here. Leave or we will have to take stronger action.
+          
+          Guard: "You can't be here. Leave or we will have to take action."
+          
           You tell them you have no idea where you are. They think you are lying.
           The guards chase you into a city.
           
@@ -98,8 +105,7 @@ def swordSkip():
     ans = 'incorrect'
     while(ans == 'incorrect'):
         if(c1.upper() == "OK"):
-            print(
-                "You walk inside the city. Right inside the gates you find an old man sitting on a bench by a well. You decide to talk to him.")
+            print("You walk inside the city. Right inside the gates you find an old man sitting on a bench by a well. You decide to talk to him.")
             ans = 'correct'
             sword4()
         else:
@@ -109,8 +115,15 @@ def swordSkip():
 
 def sword4():
     print("""
-          Will you accept the guard's help?
+          You ask the old man for directions. You are trying to get home.
           
+          Old Man: "Oh, I wish I could help you, but that dragon..."
+          
+          He starts whispering what sounds to be a prayer. You cant make out
+          what he is saying.
+          
+          
+          Do you keep talking with the old man?
           Type "YES" or "NO" to decide.
           """)
     c1 = input()
@@ -119,14 +132,16 @@ def sword4():
     while(ans == 'incorrect'):
         if(c1.upper() == "YES"):
             print(
-                "The guard gave you directions to the nearest city. You continue on your way.")
+                "You decide to keep talking to the old man.")
+            didIgnore = 0
             ans = 'correct'
-            sword3()
+            sword5()
         elif(c1.upper() == "NO"):
             print(
-                "You politely decline the guard's offer, and continue off in your own direction.")
+                "You leave the old man alone.")
+            didIgnore = 1
             ans = 'correct'
-            sword3()
+            sword6()
         else:
             print("Invalid answer. Try again.")
             c1 = input()
