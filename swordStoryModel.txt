@@ -1,4 +1,0 @@
-start in prison. talk to guard, go to city
-talk to old man.
-converse = normal ending
-ignore = extra boss

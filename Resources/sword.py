@@ -145,3 +145,49 @@ def sword4():
         else:
             print("Invalid answer. Try again.")
             c1 = input()
+
+def sword5():
+    print("""
+          Old Man: "This dragon, he's keeping me his servant, please free me..."
+          
+          The old man starts whispering again.
+          
+          Type "OK" to continue.
+          """)
+    c1 = input()
+    time.sleep(2)
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper() == "OK"):
+            print(
+                "You walk inside the city. Right inside the gates you find an old man sitting on a bench by a well. You decide to talk to him.")
+            ans = 'correct'
+            sword6()
+        else:
+            print("Invalid answer. Try again.")
+            c1 = input()
+
+def sword6():
+    print("""
+          
+          Type "YES" or "NO" to decide.
+          """)
+    c1 = input()
+    time.sleep(2)
+    ans = 'incorrect'
+    while(ans == 'incorrect'):
+        if(c1.upper() == "YES"):
+            print(
+                "You decide to keep talking to the old man.")
+            didIgnore = 0
+            ans = 'correct'
+            sword5()
+        elif(c1.upper() == "NO"):
+            print(
+                "You leave the old man alone.")
+            didIgnore = 1
+            ans = 'correct'
+            sword6()
+        else:
+            print("Invalid answer. Try again.")
+            c1 = input()
