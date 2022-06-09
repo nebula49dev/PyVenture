@@ -160,7 +160,7 @@ def sword5():
     while(ans == 'incorrect'):
         if(c1.upper() == "OK"):
             print(
-                "You walk inside the city. Right inside the gates you find an old man sitting on a bench by a well. You decide to talk to him.")
+                "You head off.")
             ans = 'correct'
             sword6()
         else:
